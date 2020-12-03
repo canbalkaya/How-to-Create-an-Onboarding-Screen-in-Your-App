@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WC-4u-jTY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Concierge View Controller-->
+        <scene sceneID="zfy-fG-EIZ">
+            <objects>
+                <viewController id="2WC-4u-jTY" customClass="ConciergeViewController" customModule="How_to_Create_an_Onboarding_Screen_in_Your_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7yu-IT-uQO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UVb-oT-8id"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <segue destination="XE2-5i-Gcy" kind="presentation" identifier="toOnboarding" modalPresentationStyle="fullScreen" id="nG8-99-BUH"/>
+                        <segue destination="cHJ-fN-S0Z" kind="presentation" identifier="toMain" id="hnw-iS-QVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsA-0n-ebt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TdN-TG-m4E">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cHJ-fN-S0Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iai-na-mmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AAI-FN-qc9"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lqw-i4-PhA"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck7-3R-TFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="495"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="5nZ-T1-k3R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="XE2-5i-Gcy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlm-Pf-nbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="-297"/>
+        </scene>
+    </scenes>
+</document>
